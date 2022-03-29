@@ -13,7 +13,7 @@ export const Circle = styled.div`
     background-color: #fff;
     position: inherit;
     border-radius: 50%;
-    animation: ripple 1.5s linear infinite;
+    animation: ${props => props.activateRipple ? "ripple 1.5s linear infinite" : "no"};
 
     @-webkit-keyframes ripple {
         0% {
@@ -42,7 +42,7 @@ export const Circle = styled.div`
     }
 
     @media (max-width: 800px) {
-        animation: ripple800 1.5s linear infinite;
+      animation: ${props => props.activateRipple ? "ripple800 1.5s linear infinite" : "no"};
     }
 
     @-webkit-keyframes ripple800 {
