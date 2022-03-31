@@ -54,3 +54,65 @@ export const Role = styled.p`
     text-align: center;
     margin-top: 10px;
 `;
+
+export const Popup = styled.div`
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: Montserrat;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+`;
+
+export const PopupInner = styled.div`
+    display: grid;
+    max-width: 542px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(68, 21, 85, 0.);
+    background-color: #EDEDED;
+`;
+
+export const PopupHeader = styled.div`
+    position: relative;
+
+    p{
+        width: 20px;
+        margin: 6px;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+`;
+
+export const PopupImg = styled.img`
+    width: 100%;
+    height: 375px;
+
+    @media (min-width: 500px) {
+        max-width: 500px;
+        height: 500px;
+    }
+`;
+
+export const PasswordWrapper = styled.form`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        height: 26px;
+        margin-left: 14px;
+        border: 1px solid #000000;
+    }
+`;
