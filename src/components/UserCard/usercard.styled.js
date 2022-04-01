@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import LoginKey from "../../images/key-login.svg";
 
 export const WrapperCard = styled.div`
     width: 330px;
@@ -78,18 +79,19 @@ export const PopupInner = styled.div`
     border-radius: 8px;
     box-shadow: 0 0 8px 0 rgba(68, 21, 85, 0.);
     background-color: #EDEDED;
+    padding-top: 34px;
+    position: relative;
 `;
 
 export const PopupHeader = styled.div`
-    position: relative;
-
     p{
         width: 20px;
-        margin: 6px;
-        font-size: 30px;
+        margin: 4px;
+        font-size: 26px;
         font-weight: 600;
         text-align: center;
         position: absolute;
+        top: 0;
         right: 0;
         cursor: pointer;
     }
@@ -110,9 +112,22 @@ export const PasswordWrapper = styled.form`
     justify-content: center;
     align-items: center;
 
-    input {
-        height: 26px;
+    button {
+        width: 30px;
+        height: 30px;
         margin-left: 14px;
-        border: 1px solid #000000;
+        background: url(${LoginKey});
+        border: 0;
+    }
+`;
+
+export const PasswordInput = styled.input`
+    height: 26px;
+    margin-left: 14px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+    &:focus {
+        outline: none;
     }
 `;
