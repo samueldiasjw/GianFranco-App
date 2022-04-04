@@ -117,6 +117,8 @@ export const PasswordWrapper = styled.form`
         height: 30px;
         margin-left: 14px;
         background: url(${LoginKey});
+        background-repeat: no-repeat;
+        background-position: center;
         border: 0;
     }
 `;
