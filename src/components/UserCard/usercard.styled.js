@@ -105,6 +105,10 @@ export const PopupImg = styled.img`
         max-width: 500px;
         height: 500px;
     }
+
+    @media (max-height: 500px) {
+        height: 300px;
+    }
 `;
 
 export const PasswordWrapper = styled.form`
@@ -120,6 +124,11 @@ export const PasswordWrapper = styled.form`
         background-repeat: no-repeat;
         background-position: center;
         border: 0;
+    }
+
+    @media (max-height: 500px) {
+        padding: 6px;
+        height: 40px;
     }
 `;
 
